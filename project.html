@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-wrapper">
+        <header class="header-dark">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="mobile-nav" style="display: none;">
+                <a href="./index.html">About Me</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./project.html">Projects</a>
+                <a href="#contact-footer">Contact</a>
+            </nav>
+
+            <h1>Anam Ikram</h1>
+            <p class="subtitle">Data Analyst | Business Analyst</p>
+
+            <div class="social-links-header">
+                <a href="https://www.linkedin.com/in/anam-ikram" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ANAMIKRAM09/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </header>
+
+        <main class="content-body">
+            <section class="projects-section">
+                <h2>My Projects</h2>
+
+                <div class="projects-grid" id="project-list">
+                    <div class="project-card" onclick="openModal('modal-excel')">
+                        <img src="./assets/excel-dashboard-image.jpg" alt="Excel Dashboard">
+                        <div class="card-info">
+                            <h3>Excel Data Analysis & Dashboard</h3>
+                            <p>Click to view details <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+
+                    <div id="modal-excel" class="modal-overlay" onclick="closeModal('modal-excel')">
+                        <div class="modal-content" onclick="event.stopPropagation()">
+
+                            <span class="close-btn" onclick="closeModal('modal-excel')">&times;</span>
+
+                            <h2>Excel Data Analysis & Dashboard Project</h2>
+
+                            <img src="./assets/excel-dashboard-image.jpg" alt="Excel Dashboard Detail" class="modal-img">
+
+                            <ul class="modal-list">
+                                <li>Cleaned and organized the raw dataset by fixing errors, formatting fields, and creating calculated columns such as COGS and Shipping Days.</li>
+                                <li>Used advanced Excel formulas (XLOOKUP, INDEX-MATCH, IF statements) to automate lookups, return checks, and cost-profit calculations.</li>
+                                <li>Built pivot tables to analyze sales, customer behavior, shipping performance, and product categories across segments and regions.</li>
+                                <li>Designed an interactive Excel dashboard with charts, slicers, and KPIs to present clear business insights for decision-making.</li>
+                            </ul>
+
+                            <div class="modal-actions">
+                                <a href="https://www.kaggle.com/datasets/austinkennell/excel-portfolio-project" target="_blank" class="btn">
+                                    <i class="fas fa-external-link-alt"></i> View Source (Kaggle)
+                                </a>
+
+                                <a href="./assets/Excel Portfolio Project.xlsx" download class="btn btn-outline">
+                                    <i class="fas fa-file-excel"></i> Download Excel File
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal('modal-sql')">
+                        <img src="./assets/sql-project.jpg" alt="SQL Project">
+                        <div class="card-info">
+                            <h3>Amazon Product Sales - SQL Data Cleaning</h3>
+                            <p>Click to view details <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+
+                    <div id="modal-sql" class="modal-overlay" onclick="closeModal('modal-sql')">
+                        <div class="modal-content" onclick="event.stopPropagation()">
+                            
+                            <span class="close-btn" onclick="closeModal('modal-sql')">&times;</span>
+
+                            <h2>Amazon Product Sales - SQL Data Cleaning</h2>
+
+                            <img src="./assets/sql-project.jpg" alt="SQL Project Detail" class="modal-img">
+
+                            <ul class="modal-list">
+                                <li>Designed and executed a complete MySQL data-cleaning workflow on 15,000+ Amazon product records using a structured staging-table approach.</li>
+                                <li>Applied window functions (ROW_NUMBER with PARTITION BY) to detect and eliminate duplicate records with high accuracy.</li>
+                                <li>Standardized key fields using REGEXP_REPLACE, TRIM, CASE logic, and NULLIF to normalize numeric values, remove noise text, and correct inconsistent formats.</li>
+                                <li>Enhanced overall dataset integrity by cleaning malformed attributes, validating data types, and establishing a consistent schema ready for analytics and dashboarding.</li>
+                            </ul>
+
+                            <div class="modal-actions">
+                                <a href="https://github.com/ANAMIKRAM09/Data-Cleaning-Project" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> View Code (GitHub)
+                                </a>
+
+                                <a href="./assets/sql-project.sql" download class="btn btn-outline">
+                                    <i class="fas fa-file-code"></i> Download SQL File
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal('modal-powerbi')">
+                        <img src="./assets/power-bi-project-img.jpeg" alt="Power BI Dashboard">
+                        <div class="card-info">
+                            <h3>Online Sales Analysis (Power BI)</h3>
+                            <p>Click to view details <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+
+                    <div id="modal-powerbi" class="modal-overlay" onclick="closeModal('modal-powerbi')">
+                        <div class="modal-content" onclick="event.stopPropagation()">
+
+                            <span class="close-btn" onclick="closeModal('modal-powerbi')">&times;</span>
+
+                            <h2>Online Sales Analysis & Dashboard</h2>
+
+                            <img src="./assets/power-bi-project-img.jpeg" alt="Power BI Detail" class="modal-img">
+
+                            <ul class="modal-list">
+                                <li>Cleaned and prepared raw datasets using Power Query to ensure accurate and consistent reporting.</li>
+                                <li>Built a clear data model and defined relationships to support smooth and reliable analysis.</li>
+                                <li>Created key performance metrics and insights using DAX and organized them into meaningful visuals.</li>
+                                <li>Designed an interactive dashboard with slicers, drill-through, and user-friendly layouts to support better decision-making.</li>
+                            </ul>
+
+                            <div class="modal-actions">
+                                <a href="https://www.kaggle.com/datasets/samruddhi4040/online-sales-data" target="_blank" class="btn">
+                                    <i class="fas fa-database"></i> Source Data (Kaggle)
+                                </a>
+
+                                <a href="./assets/Power BI Portfolio Project.pbix" download class="btn btn-outline">
+                                    <i class="fas fa-download"></i> Download .pbix File
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal('modal-tableau')">
+                        <img src="./assets/tableau-project-image.jpeg" alt="Tableau Dashboard">
+                        <div class="card-info">
+                            <h3>Global COVID-19 Analysis (Tableau)</h3>
+                            <p>Click to view details <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+
+                    <div id="modal-tableau" class="modal-overlay" onclick="closeModal('modal-tableau')">
+                        <div class="modal-content" onclick="event.stopPropagation()">
+
+                            <span class="close-btn" onclick="closeModal('modal-tableau')">&times;</span>
+
+                            <h2>Global COVID-19 Analysis Dashboard</h2>
+
+                            <img src="./assets/tableau-project-image.jpeg" alt="Tableau Detail" class="modal-img">
+
+                            <ul class="modal-list">
+                                <li>Developed an interactive Tableau dashboard analyzing global COVID-19 deaths using data from Our World in Data, integrating maps, KPIs, and time-series visualizations.</li>
+                                <li>Cleaned and transformed the dataset prior to import, applying data cleaning, date formatting, and calculated fields such as deaths-per-million.</li>
+                                <li>Implemented dynamic filters, parameters, and drill-down interactions to enable deeper exploration and user-controlled analysis.</li>
+                                <li>Demonstrated strong capabilities in Tableau, dashboard design, and analytical storytelling to highlight key global patterns.</li>
+                            </ul>
+
+                            <div class="modal-actions">
+                                <a href="https://public.tableau.com/views/TableauportfolioProject/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="btn">
+                                    <i class="fas fa-chart-line"></i> Live Dashboard
+                                </a>
+
+                                <a href="https://ourworldindata.org/covid-deaths" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-database"></i> Source Data
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-dark" id="contact-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Write</h3>
+                    <p>anamikram14@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow</h3>
+                    <div class="social-links-footer">
+                        <a href="https://www.linkedin.com/in/anam-ikram" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ANAMIKRAM09/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright">
+                &copy; 2025 Anam Ikram. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
